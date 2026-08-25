@@ -32,7 +32,7 @@ const SendMessage = () => {
       </h1>
       <form
         onSubmit={() => handleSubmit()}
-        className="md:w-2/4 w-full flex flex-col gap-5"
+        className="md:w-2/4 w-full flex flex-col gap-5 md:px-0 px-2"
       >
         <div className="flex flex-col gap-1">
           <p className="text-sm">First Name</p>

@@ -102,7 +102,7 @@ const Navbar = () => {
         </Link>
         <Link
           onClick={() => closeMenu()}
-          href={"/services"}
+          href={"/service"}
           className="text-sm text-white"
         >
           Services
