@@ -34,7 +34,7 @@ const Footer = () => {
           Helpful Links
         </h1>
         <div className="w-full text-start flex flex-col md:items-start items-center gap-5">
-          <p className="text-sm text-white">Servics</p>
+          <p className="text-sm text-white">Services</p>
           <p className="text-sm text-white">Support</p>
           <p className="text-sm text-white">Terms and Condition</p>
           <p className="text-sm text-white">Policy Privacy</p>
