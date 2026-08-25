@@ -36,7 +36,7 @@ export async function POST(req: Request) {
 
   cookie.set("estate", token, {
     httpOnly: true,
-    secure: false,
+    secure: true,
     sameSite: "lax",
     maxAge: 60 * 60 * 24 * 7,
     path: "/",

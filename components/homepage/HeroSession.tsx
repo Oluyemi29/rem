@@ -22,7 +22,7 @@ const HeroSession = () => {
             We provide you with all sort of luxury apartment globally, with
             price ranges and <br /> we ensure data protection and policy
           </p>
-          <div className="md:w-max w-full md:px-0 px-5 md:mt-5mt-14 flex md:flex-row flex-col mx-auto md:gap-10 gap-6">
+          <div className="md:w-max w-full md:px-0 px-5 md:mt-5 mt-14 flex md:flex-row flex-col mx-auto md:gap-10 gap-6">
             <button className="text-white bg-deepYellow md:w-48 w-full md:h-12 h-14 rounded-md cursor-pointer">
               View Property
             </button>
