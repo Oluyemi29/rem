@@ -56,7 +56,7 @@ const Property = () => {
           <input
             type="text"
             placeholder="Search properties..."
-            className="w-full rounded-full h-full px-10 md:text-lg text-sm border-2 border-deepBlue/20 "
+            className="w-full rounded-full h-full md:px-10 px-5 md:text-lg text-sm border-2 border-deepBlue/20 "
             value={search}
             onChange={(e) => handleSearch(e.target.value)}
           />
