@@ -14,7 +14,7 @@ export const PropertyTypesData: PropertyTypesProps[] = [
   },
   {
     id: "2",
-    type: "Apartment",
+    type: "Duplex",
     count: "44 Properties",
     icon: GiFamilyHouse,
   },

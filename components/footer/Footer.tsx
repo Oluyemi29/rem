@@ -1,5 +1,6 @@
 "use client";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 import { FaFacebookF, FaYoutube } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa6";
@@ -8,25 +9,33 @@ import { MdEmail } from "react-icons/md";
 const Footer = () => {
   return (
     <div className="w-full flex flex-col md:flex-row justify-center md:items-start items-center md:gap-5 gap-14 py-10 bg-deepYellow md:px-5 px-0">
-      <div className="w-full flex flex-col md:items-start items-center gap-4">
+      <div className="w-full flex flex-col md:items-start items-center gap-1">
         <Image
-          src={"/brand.png"}
+          src={"/rem.png"}
           alt="BrandLogo"
           width={"100"}
           height={"100"}
           className="w-20 h-20"
         />
-        <p className="text-2xl text-white font-bold">REM</p>
+        <p className="text-2xl text-white font-bold md:ml-4">REM</p>
       </div>
       <div className="w-full flex flex-col md:items-start items-center md:gap-16 gap-8">
         <h1 className="md:text-lg text-sm font-semibold text-white">
           Information
         </h1>
         <div className="w-full text-start flex flex-col md:items-start items-center gap-5">
-          <p className="text-sm text-white">Home</p>
-          <p className="text-sm text-white">About</p>
-          <p className="text-sm text-white">Services</p>
-          <p className="text-sm text-white">Contact Us</p>
+          <Link href={"/"} className="text-sm text-white">
+            Home
+          </Link>
+          <Link href={"/about"} className="text-sm text-white">
+            About
+          </Link>
+          <Link href={"/service"} className="text-sm text-white">
+            Services
+          </Link>
+          <Link href={"/contact"} className="text-sm text-white">
+            Contact Us
+          </Link>
         </div>
       </div>
       <div className="w-full flex flex-col md:items-start items-center md:gap-16 gap-8">
@@ -34,10 +43,18 @@ const Footer = () => {
           Helpful Links
         </h1>
         <div className="w-full text-start flex flex-col md:items-start items-center gap-5">
-          <p className="text-sm text-white">Services</p>
-          <p className="text-sm text-white">Support</p>
-          <p className="text-sm text-white">Terms and Condition</p>
-          <p className="text-sm text-white">Policy Privacy</p>
+          <Link href={"/service"} className="text-sm text-white">
+            Services
+          </Link>
+          <Link href={"/"} className="text-sm text-white">
+            Support
+          </Link>
+          <Link href={"/"} className="text-sm text-white">
+            Terms and Condition
+          </Link>
+          <Link href={"/"} className="text-sm text-white">
+            Policy Privacy
+          </Link>
         </div>
       </div>
       <div className="w-full flex flex-col md:items-start items-center md:gap-16 gap-8">
@@ -45,10 +62,18 @@ const Footer = () => {
           Our Services
         </h1>
         <div className="w-full text-start flex flex-col md:items-start items-center gap-5">
-          <p className="text-sm text-white">Buy</p>
-          <p className="text-sm text-white">Rent</p>
-          <p className="text-sm text-white">Shortlet and Condition</p>
-          <p className="text-sm text-white">Payment</p>
+          <Link href={"/properties"} className="text-sm text-white">
+            Buy
+          </Link>
+          <Link href={"/properties"} className="text-sm text-white">
+            Rent
+          </Link>
+          <Link href={"/properties"} className="text-sm text-white">
+            Shortlet and Condition
+          </Link>
+          <Link href={"/properties"} className="text-sm text-white">
+            Payment
+          </Link>
         </div>
       </div>
       <div className="w-full flex flex-col md:items-start items-center md:gap-16 gap-8">

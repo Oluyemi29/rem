@@ -12,9 +12,9 @@ type Property = {
   index: number;
 };
 
-const PropertyCard = ({ properties }: Property) => {
+const TrendingCard = ({ properties }: Property) => {
   return (
-    <div className="w-full shadow-md shadow-deepBlue/50 rounded-md hover:scale-95 duration-500 transition-all ease-in-out">
+    <div className="md:w-100 w-76 shadow-md shadow-deepBlue/50 rounded-md ">
       <div className="w-full md:h-84 h-60">
         <Image
           src={properties.images[0]}
@@ -26,12 +26,10 @@ const PropertyCard = ({ properties }: Property) => {
         />
       </div>
       <div className="w-full p-3">
-        <p className="text-lg  text-deepBlue font-semibold">
-          {properties.name}
-        </p>
+        <p className="text-lg  text-black font-semibold">{properties.name}</p>
         <p className="text-sm">{properties.description}</p>
 
-        <div className="w-full grid grid-cols-2 gap-5 my-5">
+        <div className="w-full md:grid hidden grid-cols-2 gap-5 my-5">
           <div className="flex flex-row gap-2 items-center">
             <FaBath className="text-deepBlue/80 text-xl" />
             <p className="text-sm text-deepBlue/80">
@@ -53,7 +51,7 @@ const PropertyCard = ({ properties }: Property) => {
         </div>
 
         {/* amentis  */}
-        <div className="w-full flex flex-col gap-1.5">
+        {/* <div className="w-full flex flex-col gap-1.5">
           <p className="text-sm underline font-semibold text-deepBlue/80">
             Amenties
           </p>
@@ -66,20 +64,21 @@ const PropertyCard = ({ properties }: Property) => {
               );
             })}
           </div>
-        </div>
+        </div> */}
 
         {/* price  */}
         <div className="w-full mt-10 flex flex-row justify-between items-center">
-          <p>
+          <p className="text-sm">
             {new Intl.NumberFormat("en-NG", {
               currency: "NGN",
               style: "currency",
             }).format(properties.price)}
           </p>
-          <Link href={`/properties/${properties.id}`} className="w-max">
-            <button className="text-white bg-deepYellow w-32 text-sm h-10 rounded-md cursor-pointer">
-              View Property
-            </button>
+          <Link
+            href={`/properties/${properties.id}`}
+            className="text-deepYellow text-sm font-semibold rounded-md cursor-pointer"
+          >
+            View Property
           </Link>
         </div>
       </div>
@@ -87,4 +86,4 @@ const PropertyCard = ({ properties }: Property) => {
   );
 };
 
-export default PropertyCard;
+export default TrendingCard;

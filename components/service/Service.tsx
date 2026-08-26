@@ -14,9 +14,9 @@ const Service = () => {
         <div className="w-auto flex flex-col justify-center items-center gap-1">
           <h1 className="text-deepBlue text-5xl font-bold">Our Service</h1>
           <p className="md:text-lg text-sm text-center mt-2 text-deepBlue">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti
-            laborum, placeat asperiores sunt soluta neque? <br /> Similique
-            voluptate vitae laudantium labore?
+            We provide reliable real estate solutions designed to make buying,
+            selling, renting, and <br className="md:block hidden" /> managing
+            properties easier.
           </p>
         </div>
       </div>

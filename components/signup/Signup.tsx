@@ -1,10 +1,12 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import React, { useState } from "react";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
 
 const Signup = () => {
+  const router = useRouter();
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
@@ -40,7 +42,8 @@ const Signup = () => {
       });
       const response = await request.json();
       if (response.success) {
-        return alert(response.message);
+        alert(response.message);
+        return router.push("/signin");
       } else {
         return alert(response.message);
       }

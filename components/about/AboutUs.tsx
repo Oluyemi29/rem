@@ -14,9 +14,8 @@ const AboutUs = () => {
         <div className="w-auto flex flex-col justify-center items-center gap-1">
           <h1 className="text-white text-5xl font-bold">About Us </h1>
           <p className="md:text-lg text-sm text-center mt-2 text-white">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti
-            laborum, placeat asperiores sunt soluta neque? <br /> Similique
-            voluptate vitae laudantium labore?
+            We are a trusted real estate management company dedicated to making
+            property ownership, renting, <br className="md" /> and management simple and stress-free.
           </p>
         </div>
       </div>

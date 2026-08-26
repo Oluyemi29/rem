@@ -1,10 +1,12 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import React, { useState } from "react";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
 
 const Signin = () => {
+  const router = useRouter();
   const [formData, setFormData] = useState({
     email: "",
     password: "",
@@ -38,7 +40,8 @@ const Signin = () => {
       });
       const response = await request.json();
       if (response.success) {
-        return alert(response.message);
+        alert(response.message);
+        return router.push("/properties");
       } else {
         return alert(response.message);
       }

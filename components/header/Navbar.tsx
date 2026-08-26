@@ -19,11 +19,11 @@ const Navbar = () => {
       <div className="w-full flex flex-row justify-between items-center h-16 bg-deepBlue/5 md:px-12 px-1">
         <Link href={"/"} className="w-max">
           <Image
-            src={"/brand.png"}
+            src={"/rem.png"}
             alt="BrandLogo"
             width={"100"}
             height={"100"}
-            className="w-12 h-12"
+            className="w-16 h-16"
           />
         </Link>
         {/* <h1 className="text-deepBlue font-bold text-lg">REM</h1> */}
