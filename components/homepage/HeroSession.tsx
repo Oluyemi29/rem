@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 import React from "react";
 
 // https://images.pexels.com/photos/7147291/pexels-photo-7147291.jpeg
@@ -23,12 +24,16 @@ const HeroSession = () => {
             price ranges and <br /> we ensure data protection and policy
           </p>
           <div className="md:w-max w-full md:px-0 px-5 md:mt-5 mt-14 flex md:flex-row flex-col mx-auto md:gap-10 gap-6">
-            <button className="text-white bg-deepYellow md:w-48 w-full md:h-12 h-14 rounded-md cursor-pointer">
-              View Property
-            </button>
-            <button className="text-lg text-white md:w-48 w-full md:h-12 h-14 rounded-md border-2 border-white cursor-pointer">
-              Create Account
-            </button>
+            <Link href={"/properties"} className="w-max">
+              <button className="text-white bg-deepYellow md:w-48 w-full md:h-12 h-14 rounded-md cursor-pointer">
+                View Property
+              </button>
+            </Link>
+            <Link href={"/signup"} className="w-max">
+              <button className="text-lg text-white md:w-48 w-full md:h-12 h-14 rounded-md border-2 border-white cursor-pointer">
+                Create Account
+              </button>
+            </Link>
           </div>
         </div>
         <div className="mt-20 md:flex hidden flex-row bg-white gap-5 rounded-md p-3">
@@ -41,9 +46,11 @@ const HeroSession = () => {
           <div className="bg-deepBlue/10 flex flex-col justify-center items-center text-center border-2 border-deepBlue/30 w-32 h-9 rounded-md">
             <p className="text-deepBlue">Shortlet</p>
           </div>
-          <button className="text-white bg-deepYellow w-36 h-9 rounded-md cursor-pointer">
-            Seearch
-          </button>
+          <Link href={"/properties"} className="w-max">
+            <button className="text-white bg-deepYellow w-36 h-9 rounded-md cursor-pointer">
+              Search
+            </button>
+          </Link>
         </div>
       </div>
     </div>
