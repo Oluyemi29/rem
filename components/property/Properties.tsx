@@ -52,7 +52,7 @@ const Property = () => {
   return (
     <div className="w-full mb-10">
       <div className="w-full gap-5 flex flex-col">
-        <div className="w-full my-5 flex flex-row items-center md:gap-10 gap-5 md:h-20 h-12">
+        <div className="w-full mt-5 flex flex-row items-center md:gap-10 gap-5 md:h-20 h-12">
           <input
             type="text"
             placeholder="Search properties..."
