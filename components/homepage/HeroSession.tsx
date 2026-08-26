@@ -24,12 +24,12 @@ const HeroSession = () => {
             price ranges and <br /> we ensure data protection and policy
           </p>
           <div className="md:w-max w-full md:px-0 px-5 md:mt-5 mt-14 flex md:flex-row flex-col mx-auto md:gap-10 gap-6">
-            <Link href={"/properties"} className="w-max">
+            <Link href={"/properties"} className="md:w-48 w-full">
               <button className="text-white bg-deepYellow md:w-48 w-full md:h-12 h-14 rounded-md cursor-pointer">
                 View Property
               </button>
             </Link>
-            <Link href={"/signup"} className="w-max">
+            <Link href={"/signup"} className="md:w-48 w-full">
               <button className="text-lg text-white md:w-48 w-full md:h-12 h-14 rounded-md border-2 border-white cursor-pointer">
                 Create Account
               </button>
