@@ -52,6 +52,12 @@ const Navbar = () => {
           >
             Contact Us
           </Link>
+          <Link
+            href={"/properties"}
+            className={`hover:underline underline-offset-2 hover:font-semibold transition-all duration-500 ease-in-out cursor-pointer ${pathName === "/contact" && "font-semibold underline underline-offset-2"}`}
+          >
+            Properties
+          </Link>
         </div>
         <div className="flex flex-row md:gap-5 gap-3 items-center">
           <Link
@@ -113,6 +119,13 @@ const Navbar = () => {
           className="text-sm text-white"
         >
           Contact us
+        </Link>
+        <Link
+          onClick={() => closeMenu()}
+          href={"/properties"}
+          className="text-sm text-white"
+        >
+          Properties
         </Link>
         <Link
           onClick={() => closeMenu()}
